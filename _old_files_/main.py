@@ -1,10 +1,12 @@
 import os
-import discord
 import mysql.connector
-from discord import Intents
 from mysql.connector import errorcode
-from config import config
-from config import TOKEN
+import discord
+from discord import Intents
+from apscheduler.schedulers.asyncio import AsyncIOScheduler
+from discord.ext.commands import Bot as BotBase
+from lib.bot.config import config
+from lib.bot.config import TOKEN
 
 intents=Intents.all()
 
